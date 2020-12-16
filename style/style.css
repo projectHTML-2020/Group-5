@@ -88,7 +88,7 @@ a.active,a:hover{
         height: 100%;
         background: #2c3e50;
         top: 60px;
-        left: -110%;
+        left: -120%;
         text-align: center;
         transition: all .5s;
     }
