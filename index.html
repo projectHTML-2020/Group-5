@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "UTF-8">
+	    <meta name = "viewport" content = "with = device-width, initial-scale = 1.0">
+        <meta http-equiv = "X-UA-Compatible" content = "ie = edge">
+        <link rel="stylesheet" type="text/css" href="style/style.css">
+        <link rel="icon" href="img/logo.png">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <title>Index</title>
+    </head>
+
+    <body>
+
+        <!--Navigation Bar-->
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+               <i class="fas fa-bars"></i> 
+            </label>
+            <label class="logo"><img src="img/newlogo.png"></label>
+            <ul>
+                <li><a href="#">Stream</a></li>
+                <li><a href="#">Classwork</a></li>
+                <li><a class="active" href="#">People</a></li>
+            </ul>
+        </nav>
+        
+        <!--Main Body-->
+        <div class="box">
+            <div class="upper-container">
+                <div class="image-container">
+                    <img src="img/profile.jpg" alt="Jonathan Hipolito">
+                </div>
+            </div>
+
+            <div class="lower-container">
+                <div>
+                    <h3>JONATHAN HIPOLITO</h3>
+                    <h4>Professor | Web System and Technologies | BSIT 3B</h4>
+                </div>
+            </div>
+
+            <button class="collapsible">Student List</button>
+            <div class="content">
+                <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+                <ul id="myUL">
+                  <li><a href="#">Meressel Manongtong</a></li>
+                  <li><a href="#">Jastin Rose Cruz</a></li>
+                  <li><a href="#">Bryce Angel Ganotice</a></li>
+                  <li><a href="#">Vince Daniel De Leon</a></li>
+                  <li><a href="#">Carlos Daniel De Leon</a></li>
+                </ul>
+
+                <button class="addstu" id="myBtn">Invite Students</button>
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h2>Invite Student</h2>
+                        <p>Enter your student's email to invite.</p><br>
+                        <form>
+                            <div class="inputBox">
+                            <input type="text" placeholder="Enter email here">
+                            </div>
+                            <button class="substu" onclick="myClick()">Ok</button>
+
+                        </form>
+                      </div>
+                </div>
+            </div> 
+        </div>
+        <script src="js/script.js"></script>
+        <script src="js/searchScript.js"></script>
+        <script src="js/modalScript.js"></script>
+    </body>
+</html>
